@@ -1,0 +1,356 @@
+// COLOR SET
+
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$gray: #787878;
+$black: #202020;
+
+// CSS RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arimo', serif;
+    text-align: left; //CHANGE (design?)
+}
+
+h2 {
+    font-weight: 700; // CHANGE (check)
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 0.75rem;
+    padding-top: 1.5rem;
+}
+
+#top-of-page {
+    margin-top: 2rem;
+}
+
+a {
+    color: $black;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline; //CHANGE (update all footers to have this class for web team link)
+}
+
+a:hover {
+    text-decoration: none;
+    color: $gray;
+    transition-timing-function: ease-in;
+}
+
+.side-margins {
+    margin: 0 15vw;
+}
+
+.top-margin {
+    margin-top: 1rem;
+}
+
+.really-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+// Highlight
+
+.highlight {
+color: #1d1d1e;
+border-radius: 10px;
+-webkit-box-decoration-break: clone;
+box-decoration-break: clone;
+padding: 0 5px 0 5px;
+}
+
+// NAV BAR
+.link:hover {
+    text-decoration: none !important;
+}
+
+.link.active, 
+.link:active {
+    font-weight: bold;
+}
+
+.navbar.scrolled {
+    background-color: white !important;
+    transition: background-color 200ms linear;
+    color: $black;
+}
+
+nav {
+    font-weight: 500;
+    background-color: white;
+    color: $black;
+}
+
+
+.nav-link {
+    display: block;
+    padding: .05rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.25rem !important;
+padding-left: 1.25rem !important;
+}
+
+.navbar .btn-outline-white.apply {
+    border-radius: 1.25rem !important;
+}
+
+.rounded {
+    border-radius: 75% !important;
+}
+
+a.nav-link.blog {
+    color: $black !important;
+    margin-right: 30px; //MOBILE/TABLET//
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle {
+    color: $black;
+    margin-right: 15px; //MOBILE/TABLET//
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+    display: block;
+}
+
+.bottom-border-red {
+    border-bottom: solid $red;
+}
+
+.bottom-border-green {
+    border-bottom: solid $green;
+}
+
+.bottom-border-blue {
+    border-bottom: solid $blue;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle:hover {
+    text-decoration: none;
+    color: $gray;
+    transition-timing-function: ease-in;
+}
+
+a.nav-link.blog:hover {
+    color: $gray !important;
+}
+
+.dropdown-item:hover {
+    color: $gray !important;
+    opacity: 1;
+    background-color: white;
+}
+
+.dropdown-menu {
+    border-style: none;
+    border-radius: 0;
+    text-align: right; //MOBILE/TABLET//
+}
+
+.navbar-toggler {
+    border-style: none;
+    padding-top: 0px;
+    color: hotpink;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+
+// FOOTER
+
+footer {
+    // font-family: Filson Pro; CHANGE
+    background-color: white;
+    color: $black;
+    padding: 20px 10vw;
+    text-align: center;
+    margin-top: 5vw;
+    z-index: 1;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5rem;
+    justify-content: center;
+    z-index: 1;
+}
+
+.col-5ths {
+    padding: 0 10px;
+}
+
+.footer-icon-1:hover {
+    color: $red;
+}
+
+.footer-icon-2:hover {
+    color: $yellow;
+}
+
+.footer-icon-3:hover {
+    color: $green;
+}
+
+.footer-icon-4:hover {
+    color: $blue;
+}
+
+.footer-icon-5:hover {
+    color: $red;
+}
+
+
+//LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes; make sure images are 100vh - 81px)
+.banner {
+    width: 100vw;
+    // height: 100vh;
+}
+
+.banner-img {
+    width: 100vw;
+    // height: 100vh;
+    object-fit: cover; //CHANGE (how do we want this to adjust @design?) - seperate mobile and tablet versions
+}
+
+
+// IMAGE SWITCH FOR MOBILE
+
+.visible-mobile {
+    display: block !important;
+}
+
+.hidden-mobile {
+    display: none !important;
+}
+
+.left-align {
+    display: flex;
+    justify-content: center;
+}
+
+.right-align {
+    display: flex;
+    justify-content: center;
+}
+
+// BUTTONS
+
+.button {
+    text-align: center !important;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    border-style: solid;
+    border-color: $black;
+    border-radius: 1em;
+    padding: 0.75em 2em;
+    margin-top: 0.8rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: $black;
+}
+
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+    // Switch image back to desktop version
+    .visible-mobile {
+        display: none !important;
+    }
+
+    .hidden-mobile {
+        display: block !important;
+    }
+
+    .left-align {
+        display: inline;
+        padding-left:0;
+
+    }
+    
+    .right-align {
+        display: inline;
+        padding-right: 0;
+        align-items: right;
+    }
+
+    .right-align-self {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    h2 {
+        text-align: left;
+    }
+
+    h4 {
+        text-align: left;
+    }
+
+    body {
+        text-align: left; //CHANGE (remove if top remains unchanged)
+    }
+
+    .banner {
+        //CHANGE (swap image back to large size)
+        transform: rotate(0);
+    }
+
+    // NAV BAR
+    a.nav-link.blog {
+        margin-right: 0px;
+    }
+
+    #navbarDropdownMenuLink.nav-link.dropdown-toggle {
+        margin-right: 0px;
+    }
+
+    .dropdown-menu {
+        border-style: none;
+        border-radius: 0;
+        text-align: left;
+    }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
