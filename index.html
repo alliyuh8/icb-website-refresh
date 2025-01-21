@@ -44,6 +44,27 @@
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/mainscroll.css" type="text/css" />
+
+  <style>
+  .index-button {
+    background-color: #FFD86D;
+    border-color: #FFD86D;
+    color: black;
+    font-family: Gabarito;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+    display: inline-block; 
+    width: fit-content;
+  }
+
+  .index-button:hover {
+    background-color: #ffd045;
+    border-color: #ffd045;
+    color: black;
+  }
+  </style>    
 </head>
 
 <body style="background-color: black;">
@@ -111,7 +132,7 @@
         </svg>
         <div style="background: url('Assets/img/Page Background.png') repeat; ">
             <!-- About Section -->
-            <div class="section about-content d-flex justify-content-center align-items-center" style="min-height: 100vh; background: url('Assets/img/Page Background.png') repeat; color: black; font-size: 50px; font-family: Gabarito; text-align: left;">
+            <div class="section about-content d-flex justify-content-center align-items-center" style="min-height: 90vh; background: url('Assets/img/Page Background.png') repeat; color: black; font-size: 50px; font-family: Gabarito; text-align: left; padding-bottom: 100px;">
                 <div class="content-container" style="max-width: 50vw; margin: auto;">
                     <div class="header" style="font-family: BioRhyme; font-weight: bold; padding-bottom: 20px; text-align: center;">We Are Invention Corps</div>
                     <div class="body" style="line-height: 1.2; text-align: center;">
@@ -124,21 +145,24 @@
             </div>
 
             <!-- What We Do Section -->
-            <div class="section" style="display: flex; background:black; align-items: center; justify-content: space-around; padding: 150px 175px  150px 175px; min-height: 50vh; color: white;">
-                <div class="inline-container" style="max-width: 70vw;display: flex;align-items: center;align-content: center;flex-direction: row;">
-                    <div class="right-column" style="display: flex; flex-direction: column; justify-content: space-between; max-width: 50vw;">
-                        <div class="header" style="font-family: Gabarito; font-weight: bold; text-align: left; font-size: 70px; line-height: 1;">We Do Many Types of Design</div>
-                        <p style="font-size: 25px; line-height: 1.5;padding-top: 50px;">
+            <div class="section" style="position: relative; background: black; color: white;height: 100vh;">
+                <div style="max-width: 70vw; margin: 0 15vw; position: relative; height: 100%;">  
+                    <div style="max-width: 30vw; text-align: left; z-index: 1; position: relative; top: 50%; transform: translateY(-50%);">
+                        <div class="header" style="font-family: Gabarito; font-weight: bold; font-size: 70px; line-height: 1; margin-bottom: 30px;">
+                            We Do Many Types of Design
+                        </div>
+                        <p style="font-size: 25px; line-height: 1.5;">
                             From redesigning web interfaces to prototyping physical products, our members are passionate in all sorts of different design projects. 
                             We dive headfirst into the design process with clients from a diverse array of industries.
                         </p>
-                        </div>
-                    <img src="Assets/img/landing/Dorito.png" style="display: block;width: 200%" alt="core value graphic">
+                    </div>
+                    <img src="Assets/img/landing/Dorito Graphic.png" style="position: absolute; top: -59%; left: -15%;  width: 135%; height: auto; overflow: visible;" alt="core value graphic">
                 </div>
             </div>
+            
 
             <!-- Our Pillars Section -->
-            <div class="section" style="display: flex; background: #F5F0EA; align-items: center; justify-content: space-around; padding: 100px 175px  100px 175px; min-height: 50vh; color: black;">
+            <div class="section" style="display: flex; align-items: center; justify-content: space-around; min-height: 100vh; color: black;">
                 <div class="right-column" style="display: flex; flex-direction: column; justify-content: space-between;max-width: 70vw;">
                     <div class="header" style="font-family: Gabarito; text-align: left; font-weight: bold; font-size: 50px;">We Have Four Impact Pillars</div>
                     <p style="font-size: 20px; line-height: 1.5; font-weight: 500;">
@@ -146,29 +170,32 @@
                         These four pillars serve as the crucial framework for the designs we create.
                     </p>
                     <img src="Assets/img/landing/Pillars.png" alt="impact pillars graphic" 
-                    style="display: block; margin: 20px auto; width: 70vw; height: auto;">
+                    style="display: block; margin-bottom: 50px; width: 70vw; height: auto;">
                 </div>
             </div>
 
-            <!--Apply Section -->
-            <div class="section" style="display: flex; background: black; align-items: center; justify-content: space-around; padding: 0px 175px 0px 175px; min-height: 50vh; color: white;">
-                <div class="inline-container" style="max-width: 70vw;display: flex;align-items: center;align-content: center;flex-direction: row;">
+            <!-- Apply Section -->
+            <div class="section" style="display: flex; background: black; align-items: center; justify-content: space-around; padding: 20 0 20 0; color: white;">
+                <div class="inline-container" style="max-width: 70vw; display: flex; align-items: center; flex-direction: row;">
                     <img src="Assets/img/landing/Rainbow Lines Graphic.png" alt="impact pillars graphic" 
-                        style="display: block; margin: 20px auto; max-width: 100%; height: auto;">
+                        style="display: block; margin: -75px 0 75px 0px; max-width: 100%; height: auto; overflow: visible;">
                     <div class="right-column" style="display: flex; flex-direction: column; justify-content: space-between; width: 40vw; padding-left: 150px;">
-                        <div class="header" style="font-family: Gabarito; text-align: left; font-weight: bold;font-size: 50px;">We Are Made Up Of Thinkers, Tinkerers, Creators, and Problem-Solvers</div>
+                        <div class="header" style="font-family: Gabarito; text-align: left; font-weight: bold; font-size: 50px;">
+                            We Are Made Up Of Thinkers, Tinkerers, Creators, and Problem-Solvers
+                        </div>
                         <p style="font-size: 20px; line-height: 1.5; font-weight: 500;">
                             With members majoring in architecture, engineering, environmental studies, political science, CS, 
                             and more, we believe the best work and the best teams are multidisciplinary. Our recruitment process is focused not on your 
                             major or experience level, but how you creatively think about and approach problems.
                         </p>
-                        <a href="#apply.html" style="display: inline-block; margin-top: 20px; font-size: 20px; color: black; background-color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; text-align: center;">Apply</a>
+                        <a class="btn index-button" href="#apply.html">Apply</a>
                     </div>
                 </div>
             </div>
+
             
             <!-- Past Clients Section -->
-            <div class="section" style="display: flex; background: #F5F0EA; align-items: center; justify-content: space-around; padding: 100px 175px  100px 175px; min-height: 50vh; color: black;">
+            <div class="section" style="display: flex; align-items: center; justify-content: space-around; padding: 100px 175px  100px 175px; min-height: 50vh; color: black;">
                 <div class="inline-container" style="max-width: 70vw;display: flex;align-items: center;align-content: center;flex-direction: row;">
                     <div class="left-column" style="display: flex; flex-direction: column; justify-content: space-between; max-width: 50vw; padding-right: 150px;">
                         <div class="header" style="font-family: Gabarito; font-weight: bold; text-align: left; font-size: 50px;">We Get Involved In Really Cool Projects</div>
@@ -176,7 +203,7 @@
                             Our past clients include non-profits, start-ups, university affiliations, small 
                             businesses, and social good branches of large companies.
                         </p>
-                        <a href="#work.html" style="display: inline-block; margin-top: 20px; font-size: 20px; color: black; background-color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; text-align: center;">Our Work</a>
+                        <a class="btn index-button" href="#work.html">Our Work</a>
                         </div>
                     <img src="Assets/img/landing/Client Logos.png" style="display: block;width: 150%" alt="clients graphic">
                 </div>
