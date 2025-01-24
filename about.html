@@ -10,7 +10,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-168933669-1');
     </script>
-
+    <script src="scripts.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -59,6 +59,7 @@
             z-index: 9999;
             mix-blend-mode: overlay;
         }
+
         .backgroundimg {
             position: absolute;
             top: 0;
@@ -74,7 +75,22 @@
             position: relative;
             z-index: 1;
         }
-    </style>
+        
+        .card .img img{
+            width: fit-content;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .wrapper .carousel{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: calc((100%/3));
+            gap: 0;
+            overflow:hidden;
+            justify-items: center;
+        }
+        </style>
 </head>
 
 <header>
@@ -90,7 +106,7 @@
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
                     <ul class="navbar-nav" style="gap: 20px; color: white; font-size:20px;">
                         <li class="nav-item">
-                            <a class="nav-link text-white active" href="about.html">About</a>
+                            <a class="nav-link" style="color:#FFD86D;" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white active" href="work.html">Work</a>
@@ -154,9 +170,10 @@
             </div>
             <div class="col-md-4 flex-column justify-content-center"
                 style="min-width: 70vw; padding: 15vh 8vw; border-radius: 50px;justify-content: center; color: white; background-color: black; margin: 15vh auto;">
-                <div class="section-title" style="text-align: center;">
+                <div class="section-title" style="text-align: center; margin: 0 0 2vh 0;">
                     Design Ideology</div>
-                <p class="section-text">We utilize design thinking frameworks in every project we take on in order to create innovative,
+                <p class="section-text">We utilize design thinking frameworks in every project we take on in order to
+                    create innovative,
                     thoughtful, and intentional solutions that create tangible change.
                     In each stage of the process, we center our focus on the user and their experience (both past and
                     potential) because we believe that first and foremost, design impacts humans.
@@ -199,88 +216,22 @@
                     </div>
                 </div>
             </div>
-            <div class="justify-content-center align-items-stretch" id="fullpage" style="min-height: 80vh;">
-                <!-- Carousel Wrapper -->
-                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"
-                    data-interval="6000" style="margin-left: 15vw;">
-
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2"></li>
-                        <li data-target="#multi-item-example" data-slide-to="3"></li>
-                        <li data-target="#multi-item-example" data-slide-to="4"></li>
-                    </ol>
-                    <!-- /.Indicators -->
-
-                    <!-- Slides -->
-                    <div class="carousel-inner" role="listbox">
-
-                        <!-- First Slide -->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-12 col-md-auto mb-3" style="height: 80vh;">
-                                    <a href="Assets/img/about us/carousel images/0A484C0E-7B3E-46F2-B2FB-4EB599C9C291_1_105_c 2.png"
-                                        data-toggle="lightbox" id="open-image" class="card">
-                                        <img class="img-fluid"
-                                            src="Assets/img/about us/carousel images/0A484C0E-7B3E-46F2-B2FB-4EB599C9C291_1_105_c 2.png"
-                                            alt="Gathering in the Student Union for Team BearSquare's first meeting.">
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-auto mb-3" style="height: 80vh;">
-                                    <a href="Assets/img/about us/carousel images/DSCN1762-2 2.png"
-                                        data-toggle="lightbox" id="open-image" class="card">
-                                        <img class="img-fluid"
-                                            src="Assets/img/about us/carousel images/DSCN1762-2 2.png"
-                                            alt="By the Downtown Berkeley BART station, ready for a field trip.">
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- /.First Slide -->
-
-                        <!-- Second Slide -->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-12 col-md-auto mb-3" style="height: 80vh;">
-                                    <a href="Assets\img\about us\carousel images\DSCN1814-2 2.png"
-                                        data-toggle="lightbox" id="open-image" class="card">
-                                        <img class="img-fluid"
-                                            src="Assets\img\about us\carousel images\DSCN1814-2 2.png"
-                                            alt="Dynamic duo Jasmine and Jeffrey, two architecture icons.">
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-auto mb-3" style="height: 80vh;">
-                                    <a href="Assets/img/about us/carousel images/IMG_0153 1.png" data-toggle="lightbox"
-                                        id="open-image" class="card">
-                                        <img class="img-fluid" src="Assets/img/about us/carousel images/IMG_0153 1.png"
-                                            alt="Leilani and Pippa focused on the task at hand.">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.Second Slide -->
-
-                        <!-- Add other slides similarly -->
-                    </div>
-                    <!-- /.Slides -->
-
-                    <!-- Controls -->
-                    <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
-                        <span class="fas fa-chevron-circle-left fa-3x pr-3" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
-                        <span class="fas fa-chevron-circle-right fa-3x pl-3" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <!-- /.Controls -->
-
-                </div>
-                <!-- /.Carousel Wrapper -->
-            </div>
+        </div>
+        <div class="wrapper">
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="Assets/img/about us/carousel images/0A484C0E-7B3E-46F2-B2FB-4EB599C9C291_1_105_c 2.png" alt="cute"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Assets/img/about us/carousel images/0A484C0E-7B3E-46F2-B2FB-4EB599C9C291_1_105_c 2.png" alt="cute"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Assets/img/about us/carousel images/0A484C0E-7B3E-46F2-B2FB-4EB599C9C291_1_105_c 2.png" alt="cute"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="Assets/img/about us/carousel images/0A484C0E-7B3E-46F2-B2FB-4EB599C9C291_1_105_c 2.png" alt="cute"></div>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
