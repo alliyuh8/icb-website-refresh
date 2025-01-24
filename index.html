@@ -40,12 +40,24 @@
   <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <!-- Fullpage Styling -->
-  <link rel="stylesheet" href="assets/css/fullpage.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="Assets/css/styling.css">
   <!-- Custom Styling -->
-  <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
-  <link rel="stylesheet" href="assets/css/mainscroll.css" type="text/css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <style>
+      body::before {
+      content: ''; 
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('Assets/img/grain.png') repeat;
+      pointer-events: none;
+      z-index: 9999; 
+      mix-blend-mode: overlay;
+      }
+
   .index-button {
     background-color: #FFD86D;
     border-color: #FFD86D;
@@ -68,16 +80,13 @@
   </style>    
 </head>
 
-<body style="background-color: black;">
+<header>
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light justify-content-space-between" style="background-color: #191919; font-family:BioRhyme;">
         <div class="container d-flex justify-content-space-between" style="max-width: 100vw;">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
                 <ul class="navbar-nav" style="gap: 20px; font-size:20px;">
                     <li class="nav-item">
@@ -99,7 +108,8 @@
             </div>
         </div>
     </nav>
-
+</header>
+<body style="background-color: black;">
     <div class="d-flex flex-column justify-content-center align-items-stretch" id="fullpage" style="min-height: 80vh;">
 
         <!-- New Landing Section -->
@@ -124,19 +134,19 @@
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 1500 600" preserveAspectRatio="none" style="background: url('Assets/img/Page Background.png') repeat; ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400" viewBox="0 0 1500 600" preserveAspectRatio="none">
             <path d="M 0,0
                      L 0,300
                      Q 750,600 1500,300
                      L 1500,0
                      Z" fill="#191919" />
         </svg>
-        <div style="background: url('Assets/img/Page Background.png') repeat; ">
+        <div>
             <!-- About Section -->
-            <div class="section about-content d-flex justify-content-center align-items-center" style="min-height: 90vh; background: url('Assets/img/Page Background.png') repeat; color: black; font-size: 50px; font-family: Gabarito; text-align: left; padding-bottom: 200px;">
-                <div class="content-container" style="max-width: 60vw; margin: auto;">
-                    <div class="header" style="font-family: BioRhyme; font-weight: bold; padding-bottom: 30px; text-align: center;">We Are Invention Corps</div>
-                    <div class="body" style="line-height: 1.2; text-align: center;">
+            <div class="section about-content d-flex justify-content-center align-items-center" style="min-height: 90vh; color: black; font-size: 50px; font-family: Gabarito; text-align: left; padding-bottom: 200px;">
+                <div class="content-container" style="max-width: 60vw; margin: auto;flex-direction:column;">
+                    <div class="section-title" style="font-family:BioRhyme;">We Are Invention Corps</div>
+                    <div class="body-text" style="line-height: 1.2; text-align: center;">
                         An <span class="round-highlight" style="background-color: #FFD86D99; padding: 0px 8px; border-radius: 50px;">interdisciplinary</span>
                         group of students 
                         driven to create <span class="round-highlight" style="background-color: #62C99699; padding: 0px 8px; border-radius: 50px;">meaningful global impact</span>
@@ -149,10 +159,10 @@
             <div class="section" style="position: relative; background: black; color: white;height: 100vh;">
                 <div style="max-width: 70vw; margin: 0 auto; position: relative; height: 100%;">  
                     <div style="max-width: 35vw; text-align: left; z-index: 1; position: relative; top: 50%; transform: translateY(-50%);">
-                        <div class="header" style="font-family: Gabarito; font-weight: bold; font-size: 60px; line-height: 1; margin-bottom: 30px;">
+                        <div class="section-title">
                             We Do Many Types of Design
                         </div>
-                        <p style="font-size: 25px; line-height: 1.5;">
+                        <p class="section-text">
                             From redesigning web interfaces to prototyping physical products, our members are passionate in all sorts of different design projects. 
                             We dive headfirst into the design process with clients from a diverse array of industries.
                         </p>
@@ -168,8 +178,8 @@
             <!-- Our Pillars Section -->
             <div class="section" style="display: flex; align-items: center; justify-content: space-around; min-height: 100vh; color: black;">
                 <div class="right-column" style="display: flex; flex-direction: column; justify-content: space-between;max-width: 70vw;">
-                    <div class="header" style="font-family: Gabarito; text-align: left; font-weight: bold; line-height: 1; font-size: 50px; padding-bottom:30px;">We Have Four Impact Pillars</div>
-                    <p style="font-size: 20px; padding-bottom:20px; line-height: 1.5; font-weight: 500;">
+                    <div class="section-title">We Have Four Impact Pillars</div>
+                    <p class="section-text">
                         We combine our passion for design with our tenacity for social good in the realms of society, environment, health, and poverty. 
                         These four pillars serve as the crucial framework for the designs we create.
                     </p>
@@ -184,10 +194,10 @@
                     <img src="Assets/img/landing/Rainbow Lines Graphic.png" alt="impact pillars graphic" 
                         style="display: inline; margin: 0px 0px 75px -90px; max-width: 55%; overflow: visible;padding-right: 150px;">
                     <div class="right-column" style="display: flex; flex-direction: column; justify-content: space-between; width: 30vw; ">
-                        <div class="header" style="font-family: Gabarito; text-align: left; font-weight: bold; line-height: 1; padding-bottom: 30px; font-size: 50px;">
+                        <div class="section-title">
                             We Are Made Up Of Thinkers, Tinkerers, Creators, and Problem-Solvers
                         </div>
-                        <p style="font-size: 20px; line-height: 1.5; font-weight: 500; width: 50vw; padding-bottom: 30px; margin:0;">
+                        <p class="section-text">
                             With members majoring in architecture, engineering, environmental studies, political science, CS, 
                             and more, we believe the best work and the best teams are multidisciplinary. Our recruitment process is focused not on your 
                             major or experience level, but how you creatively think about and approach problems.
@@ -202,8 +212,8 @@
             <div class="section" style="display: flex; align-items: center; justify-content: center; min-height: 50vh; color: black;">
                 <div class="inline-container" style="padding: 0 15vw; max-width: 100vw;display: flex;align-items: center;align-content: center;flex-direction: row;justify-content: space-between; gap: 50px;">
                     <div class="left-column" style="display: flex; flex-direction: column; justify-content: space-between; width: 80vw;">
-                        <div class="header" style="font-family: Gabarito; font-weight: bold; text-align: left; line-height:1; font-size: 50px; padding-bottom: 30px;">We Get Involved In Really Cool Projects</div>
-                        <p style="font-size: 20px; line-height: 1.5; font-weight: 500; padding-bottom: 30px; margin:0;">
+                        <div class="section-title">We Get Involved In Really Cool Projects</div>
+                        <p class="section-text">
                             Our past clients include non-profits, start-ups, university affiliates, small 
                             businesses, and social good branches of large companies.
                         </p>

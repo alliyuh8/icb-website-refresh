@@ -1,5 +1,46 @@
+/* Navigation Styles */
+.nav-link:hover {
+    color: #FFD86D !important;
+}
+
+.nav-link.apply:hover {
+    color: black !important;
+    background-color: #FFD86D !important;
+    border-color: #FFD86D !important;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    background-color: #F5F0EA !important; 
+    position: relative;
+    width: 100%;
+}
+
+.container, 
+.container-fluid, 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+body {
+    background: url("Assets\img\Page Background.png") !important; 
     position: relative; 
     margin: 0; 
 }
@@ -9,24 +50,90 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('Assets/img/grain.png') repeat !important; 
+    width: 100vw;
+    height: 100vh;
+    background: url('Assets/img/grain.png') repeat;
     pointer-events: none;
     z-index: 9999; 
+    mix-blend-mode: overlay;
 }
 
-/* Navigation Styles */
-.navbar-nav .nav-item .nav-link {
+/* Button Styling */
+.light-button {
+    width: fit-content;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    font-weight: 500;
+    display: inline-block;
+    font-family: Gabarito;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+ }
+ 
+ .light-button:hover {
+    opacity: 0.85;
+    color: black;
+    text-decoration: none;
+ }
+ 
+ .dark-button {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 50px;
+    background-color: black;
     color: white;
-    transition: color 0.3s ease;
-}
+    padding: 12px 30px;
+    font-weight: 500;
+    font-family: Gabarito, sans-serif;
+    margin: 35px 0 150px 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .dark-button:hover {
+    opacity: 0.85;
+    color: white;
+    text-decoration: none;
+ }
 
-.navbar-nav .nav-item .nav-link:hover {
-    color: #FFD86D; /* Yellow on hover */
-}
+ .button img {
+    padding-left: 5px;
+    width: 20px;
+    vertical-align: middle;
+ }
 
-.navbar-nav .nav-item .nav-link.active {
-    color: #FFD86D; /* Yellow for active/current page */
+/* Standardized title styling */
+.section-title {
+    font-family: Gabarito;
     font-weight: bold;
+    text-align: left;
+    line-height: 1;
+    font-size: 50px;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+
+/* Standardized paragraph styling */
+.section-text {
+    font-family: Gabarito;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.content-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
 }
