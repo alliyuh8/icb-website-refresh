@@ -1,0 +1,32 @@
+body {
+    background-color: #F5F0EA !important; 
+    position: relative; 
+    margin: 0; 
+}
+
+body::before {
+    content: ''; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Assets/img/grain.png') repeat !important; 
+    pointer-events: none;
+    z-index: 9999; 
+}
+
+/* Navigation Styles */
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFD86D; /* Yellow on hover */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #FFD86D; /* Yellow for active/current page */
+    font-weight: bold;
+}
