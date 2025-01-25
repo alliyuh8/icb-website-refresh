@@ -87,7 +87,7 @@ body::before {
     padding: 12px 30px;
     font-weight: 500;
     font-family: Gabarito, sans-serif;
-    margin: 35px 0 150px 0;
+    margin: 35px 0 35px 0;
     text-decoration: none;
     transition: background-color 0.3s ease;
  }
