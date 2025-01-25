@@ -3,84 +3,130 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168933669-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168933669-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-168933669-1');
-</script>
+        gtag('config', 'UA-168933669-1');
+    </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Invention Corps</title>
-  <meta name="description" content="We are Invention Corps."/>
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <title>Invention Corps</title>
+    <meta name="description" content="We are Invention Corps." />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
-  <!-- Custom Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BioRhyme:wght@200..800&family=Black+Han+Sans&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'sbg8djd',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Bootstrap Styling -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <!-- Fullpage Styling -->
-  <link rel="stylesheet" type="text/css" href="Assets/css/styling.css">
-  <!-- Custom Styling -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-      body::before {
-          content: '';
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          background: url('Assets/img/grain.png') repeat;
-          pointer-events: none;
-          z-index: 9999;
-          mix-blend-mode: overlay;
-      }
-
-      .role-header {
-        display: flex; 
-        align-items: flex-start; 
-        padding-top: 100px; 
-        font-size:55px; 
-        font-weight: bold;
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BioRhyme:wght@200..800&family=Black+Han+Sans&family=Gabarito:wght@400..900&display=swap"
+        rel="stylesheet">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'sbg8djd',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script src="Assets\js\sidebar.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Fullpage Styling -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/styling.css">
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('Assets/img/grain.png') repeat;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: overlay;
+            overflow: visible;
         }
+
+        .role-header {
+            display: flex;
+            align-items: flex-start;
+            padding-top: 100px;
+            font-size: 55px;
+            font-weight: bold;
+        }
+
         .content-wrapper {
-    display: flex;
-    flex-direction: row; /* Ensure sidebar and main content are side-by-side */
-    justify-content: flex-start; /* Align sidebar properly */
-    min-height: 100vh;
-    overflow: auto; /* Allow content to scroll while keeping the sidebar sticky */
-}
-  </style>
+            display: flex;
+            flex-direction: row;
+            /* Ensure sidebar and main content are side-by-side */
+            justify-content: flex-start;
+            /* Align sidebar properly */
+            min-height: 100vh;
+            overflow: auto;
+            /* Allow content to scroll while keeping the sidebar sticky */
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 10vh;
+            /* Ensure it sticks 100px below the top */
+            height: calc(100vh - 100px);
+            /* Ensure sidebar height respects sticky behavior */
+            font-family: Gabarito;
+            font-size: 25px;
+            padding-top: 150px;
+            padding-left: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            overflow: visible;
+        }
+
+        .link {
+            color: black;
+            text-decoration: none;
+            white-space: nowrap;
+            font-weight: normal;
+            opacity: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .link:hover {
+            text-decoration: none;
+            color: black;
+            opacity: 75%;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <header>
     <!-- Header with background image and nav -->
-    <div class="header" style="background: url('Assets/img/team/Header Image Group.png') no-repeat center center; background-size: cover; width: 100%; height: 100vh;">
+    <div class="header"
+        style="background: url('Assets/img/team/Header Image Group.png') no-repeat center center; background-size: cover; width: 100%; height: 100vh;">
         <nav class="navbar navbar-expand-lg navbar-light" style="font-family: BioRhyme;">
             <div class="container d-flex justify-content-between" style="max-width: 100vw;">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
+                    <img src="assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top"
+                        alt="Invention Corps Logo">
                 </a>
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
                     <ul class="navbar-nav" style="gap: 20px; color: white; font-size:20px;">
@@ -97,7 +143,8 @@
                             <a class="nav-link text-white" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link apply btn btn-outline-white rounded" href="apply.html" style="font-size:20px; border: 2px solid white; background-color: white; border-radius: 75px !important; padding:3px 25px; color: #191919;">Apply</a>
+                            <a class="nav-link apply btn btn-outline-white rounded" href="apply.html"
+                                style="font-size:20px; border: 2px solid white; background-color: white; border-radius: 75px !important; padding:3px 25px; color: #191919;">Apply</a>
                         </li>
                     </ul>
                 </div>
@@ -105,328 +152,389 @@
         </nav>
     </div>
 </header>
-<body>
+
+<body style="overflow:visible;">
     <!-- Content wrapper with sidebar and main content -->
-    <div class="content" style="justify-content: center;">
-        <div class="content-wrapper" style="justify-content: center; min-height: 100vh; display: flex;">        
+    <div class="content" style="justify-content: center; overflow:visible;">
+        <div class="content-wrapper" style="overflow:visible;">
             <!-- Sidebar -->
-            <div class="sidebar" 
-            style="position: sticky; 
-                   top: 0; 
-                   width: fit-content;
-                   height: auto; 
-                   font-family: Gabarito; 
-                   font-size: 25px; 
-                   padding-top: 100px; 
-                   z-index: 10;">
+            <div class="sidebar" style="overflow:visible;">
                 <ul class="btn-toggle-nav list-unstyled">
-                    <li style="padding-top: 20px;"><a href="#exec-header" class="link" style="font-weight: bold; color:black; text-decoration: none; white-space: nowrap;">Executive Board</a></li>
-                    <li style="padding-top: 20px;"><a href="#leads-header" class="link" style="font-weight: bold; color:black; opacity: 50%; text-decoration: none;">Leads</a></li> <!--hard coded rn need react-->
-                    <li style="padding-top: 20px;"><a href="#members-header" class="link" style="font-weight: bold; color:black; opacity: 50%; text-decoration: none;">Members</a></li>
-                    <li style="padding-top: 20px;"><a href="#alumni-header" class="link" style="font-weight: bold; color:black; opacity: 50%; text-decoration: none;">Alumni</a></li>
+                    <li>
+                        <a href="#exec-header" class="link">Executive Board</a>
+                    </li>
+                    <li>
+                        <a href="#leads-header" class="link">Leads</a>
+                    </li>
+                    <li>
+                        <a href="#members-header" class="link">Members</a>
+                    </li>
+                    <li>
+                        <a href="#alumni-header" class="link">Alumni</a>
+                    </li>
                 </ul>
             </div>
             <!-- Main content area -->
             <div style="padding-bottom: 50px;">
-                <!--Exec-->
-                <div id="exec-header" class="role-header" style="padding-left: 375px;">
-                    Executive Board
-                    <!--<img src="Assets\img\team\Exec Board Header.png" class="d-inline-block align-top" alt="Exec Board Header" style="padding-left: 375px;">-->
-                </div>
                 <div style="padding-left: 375px; padding-top: 50px;">
-                    <!--Row 1-->
-                    <div class="row" style="max-width: 1000px;">
-                        <!-- Team Member 1 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">President</div>
-                            <div class="team-member-title" style="line-height:20px;">Brian Hsu</div>
-                            <div class="team-member-title" style="line-height:20px;">Mechanical Engineering</div>
+                    <!--Exec Board-->
+                    <div id="exec-header">
+                        <div class="role-header">Executive Board</div>
+                        <!--Row 1-->
+                        <div class="row" style="max-width: 1000px;">
+                            <!-- Team Member 1 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    President</div>
+                                <div class="team-member-title" style="line-height:20px;">Brian Hsu</div>
+                                <div class="team-member-title" style="line-height:20px;">Mechanical Engineering</div>
+                            </div>
+
+                            <!-- Team Member 2 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="max-width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    Director of Projects</div>
+                                <div class="team-member-title" style="line-height:20px;">Anika Edara</div>
+                                <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                            </div>
+
+                            <!-- Team Member 3 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="max-width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    Director of Sustainability</div>
+                                <div class="team-member-title" style="line-height:20px;">Soomin Park</div>
+                                <div class="team-member-title" style="line-height:20px;">Architecture</div>
+                            </div>
+
+                            <!-- Team Member 4 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="max-width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    Director of Health</div>
+                                <div class="team-member-title" style="line-height:20px;">Madison Lee</div>
+                                <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                            </div>
                         </div>
-                        
-                        <!-- Team Member 2 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Projects</div>
-                            <div class="team-member-title" style="line-height:20px;">Anika Edara</div>
-                            <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
-                        </div>
-                        
-                        <!-- Team Member 3 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Sustainability</div>
-                            <div class="team-member-title" style="line-height:20px;">Soomin Park</div>
-                            <div class="team-member-title" style="line-height:20px;">Architecture</div>
-                        </div>
-                        
-                        <!-- Team Member 4 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Health</div>
-                            <div class="team-member-title" style="line-height:20px;">Madison Lee</div>
-                            <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
-                        </div>
-                    </div>
-                    <!--Row 2-->
-                    <div class="row" style="max-width: 1000px; padding-top:20px;">
-                        <!-- Team Member 1 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Finance</div>
-                            <div class="team-member-title" style="line-height:20px;">Allison Dai</div>
-                            <div class="team-member-title" style="line-height:20px;">Sustainable Env. Design</div>
-                        </div>
-                        
-                        <!-- Team Member 2 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Operations</div>
-                            <div class="team-member-title" style="line-height:20px;">Katie Wang</div>
-                            <div class="team-member-title" style="line-height:20px;">Environmental Science</div>
-                        </div>
-                        
-                        <!-- Team Member 3 -->
-                        <div class="col-md-3 team-member">
-                            <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                            <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Marketing</div>
-                            <div class="team-member-title" style="line-height:20px;">Vivian Xie</div>
-                            <div class="team-member-title" style="line-height:20px;">No Idea</div>
+                        <!--Row 2-->
+                        <div class="row" style="max-width: 1000px; padding-top:20px;">
+                            <!-- Team Member 1 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="max-width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    Director of Finance</div>
+                                <div class="team-member-title" style="line-height:20px;">Allison Dai</div>
+                                <div class="team-member-title" style="line-height:20px;">Sustainable Env. Design</div>
+                            </div>
+
+                            <!-- Team Member 2 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="max-width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    Director of Operations</div>
+                                <div class="team-member-title" style="line-height:20px;">Katie Wang</div>
+                                <div class="team-member-title" style="line-height:20px;">Environmental Science</div>
+                            </div>
+
+                            <!-- Team Member 3 -->
+                            <div class="col-md-3 team-member">
+                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                    style="max-width:150px;">
+                                <div class="team-member-name"
+                                    style="font-weight:bold;line-height:20px; padding-top:10px;">
+                                    Director of Marketing</div>
+                                <div class="team-member-title" style="line-height:20px;">Vivian Xie</div>
+                                <div class="team-member-title" style="line-height:20px;">No Idea</div>
+                            </div>
                         </div>
                     </div>
                     <!--Leads-->
-                    <div id="leads-header" class="role-header">
-                        Leads
-                        <!--<img src="Assets\img\team\Leads Header.png" class="d-inline-block align-top" alt="Leads Header">-->
-                    </div>
-                    <div style=" padding-top: 50px;">
-                        <!--Row 1-->
-                        <div class="row" style="max-width: 1000px;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">President</div>
-                                <div class="team-member-title" style="line-height:20px;">Brian Hsu</div>
-                                <div class="team-member-title" style="line-height:20px;">Mechanical Engineering</div>
+                    <div id="leads-header">
+                        <div class="role-header">Leads</div>
+                        <div style=" padding-top: 50px;">
+                            <!--Row 1-->
+                            <div class="row" style="max-width: 1000px;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">President</div>
+                                    <div class="team-member-title" style="line-height:20px;">Brian Hsu</div>
+                                    <div class="team-member-title" style="line-height:20px;">Mechanical Engineering</div>
+                                </div>
+
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Projects
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Anika Edara</div>
+                                    <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of
+                                        Sustainability</div>
+                                    <div class="team-member-title" style="line-height:20px;">Soomin Park</div>
+                                    <div class="team-member-title" style="line-height:20px;">Architecture</div>
+                                </div>
+
+                                <!-- Team Member 4 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Health
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Madison Lee</div>
+                                    <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                                </div>
                             </div>
-                            
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Projects</div>
-                                <div class="team-member-title" style="line-height:20px;">Anika Edara</div>
-                                <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Sustainability</div>
-                                <div class="team-member-title" style="line-height:20px;">Soomin Park</div>
-                                <div class="team-member-title" style="line-height:20px;">Architecture</div>
-                            </div>
-                            
-                            <!-- Team Member 4 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Health</div>
-                                <div class="team-member-title" style="line-height:20px;">Madison Lee</div>
-                                <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                            <!--Row 2-->
+                            <div class="row" style="max-width: 1000px; padding-top:20px;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Finance
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Allison Dai</div>
+                                    <div class="team-member-title" style="line-height:20px;">Sustainable Env. Design</div>
+                                </div>
+
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Operations
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Katie Wang</div>
+                                    <div class="team-member-title" style="line-height:20px;">Environmental Science</div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Marketing
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Vivian Xie</div>
+                                    <div class="team-member-title" style="line-height:20px;">No Idea</div>
+                                </div>
                             </div>
                         </div>
-                        <!--Row 2-->
-                        <div class="row" style="max-width: 1000px; padding-top:20px;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Finance</div>
-                                <div class="team-member-title" style="line-height:20px;">Allison Dai</div>
-                                <div class="team-member-title" style="line-height:20px;">Sustainable Env. Design</div>
-                            </div>
-                            
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Operations</div>
-                                <div class="team-member-title" style="line-height:20px;">Katie Wang</div>
-                                <div class="team-member-title" style="line-height:20px;">Environmental Science</div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Marketing</div>
-                                <div class="team-member-title" style="line-height:20px;">Vivian Xie</div>
-                                <div class="team-member-title" style="line-height:20px;">No Idea</div>
-                            </div>
-                        </div>
-                
                     </div>
                     <!--Members-->
-                    <div id="members-header" class="role-header">
-                        Members
-                        <!--<img src="Assets\img\team\Members Header.png" class="d-inline-block align-top" alt="Leads Header" style="width:180px;">-->
-                    </div>
-                    <div style=" padding-top: 50px;">
-                        <!--Row 1-->
-                        <div class="row" style="max-width: 1000px;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">President</div>
-                                <div class="team-member-title" style="line-height:20px;">Brian Hsu</div>
-                                <div class="team-member-title" style="line-height:20px;">Mechanical Engineering</div>
+                    <div id="members-header">
+                        <div class="role-header">Members</div>
+                        <div style=" padding-top: 50px;">
+                            <!--Row 1-->
+                            <div class="row" style="max-width: 1000px;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">President</div>
+                                    <div class="team-member-title" style="line-height:20px;">Brian Hsu</div>
+                                    <div class="team-member-title" style="line-height:20px;">Mechanical Engineering</div>
+                                </div>
+
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Projects
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Anika Edara</div>
+                                    <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of
+                                        Sustainability</div>
+                                    <div class="team-member-title" style="line-height:20px;">Soomin Park</div>
+                                    <div class="team-member-title" style="line-height:20px;">Architecture</div>
+                                </div>
+
+                                <!-- Team Member 4 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Health
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Madison Lee</div>
+                                    <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
+                                </div>
                             </div>
-                            
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Projects</div>
-                                <div class="team-member-title" style="line-height:20px;">Anika Edara</div>
-                                <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Sustainability</div>
-                                <div class="team-member-title" style="line-height:20px;">Soomin Park</div>
-                                <div class="team-member-title" style="line-height:20px;">Architecture</div>
-                            </div>
-                            
-                            <!-- Team Member 4 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Health</div>
-                                <div class="team-member-title" style="line-height:20px;">Madison Lee</div>
-                                <div class="team-member-title" style="line-height:20px;">Cognitive Science</div>
-                            </div>
-                        </div>
-                        <!--Row 2-->
-                        <div class="row" style="max-width: 1000px; padding-top:20px;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Finance</div>
-                                <div class="team-member-title" style="line-height:20px;">Allison Dai</div>
-                                <div class="team-member-title" style="line-height:20px;">Sustainable Env. Design</div>
-                            </div>
-                            
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Operations</div>
-                                <div class="team-member-title" style="line-height:20px;">Katie Wang</div>
-                                <div class="team-member-title" style="line-height:20px;">Environmental Science</div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member">
-                                <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1" style="max-width:150px;">
-                                <div class="team-member-name" style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Marketing</div>
-                                <div class="team-member-title" style="line-height:20px;">Vivian Xie</div>
-                                <div class="team-member-title" style="line-height:20px;">No Idea</div>
+                            <!--Row 2-->
+                            <div class="row" style="max-width: 1000px; padding-top:20px;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Finance
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Allison Dai</div>
+                                    <div class="team-member-title" style="line-height:20px;">Sustainable Env. Design</div>
+                                </div>
+
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Operations
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Katie Wang</div>
+                                    <div class="team-member-title" style="line-height:20px;">Environmental Science</div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member">
+                                    <img src="Assets\img\team\placeholder rectangle.png" alt="Team Member 1"
+                                        style="max-width:150px;">
+                                    <div class="team-member-name"
+                                        style="font-weight:bold;line-height:20px; padding-top:10px;">Director of Marketing
+                                    </div>
+                                    <div class="team-member-title" style="line-height:20px;">Vivian Xie</div>
+                                    <div class="team-member-title" style="line-height:20px;">No Idea</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--Alum-->
-                    <div id="alumni-header" class="role-header">
-                        Alumni
-                        <!--<img src="Assets\img\team\Alumni Header.png" class="d-inline-block align-top" alt="Leads Header" style="width:150px;">-->
-                    </div>
-                    <div>
-                        <!--Row 1-->
-                        <div class="alum-row" style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
+                    <div id="alumni-header">
+                        <div class="role-header">Alumni</div>
+                        <div>
+                            <!--Row 1-->
+                            <div class="alum-row"
+                                style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
+                                </div>
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
+                            <!--Row 2-->
+                            <div class="alum-row"
+                                style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
+                                </div>
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
+                            <!--Row 3-->
+                            <div class="alum-row"
+                                style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
+                                </div>
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--Row 2-->
-                        <div class="alum-row" style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
+                            <!--Row 4-->
+                            <div class="alum-row"
+                                style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
+                                <!-- Team Member 1 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
+                                <!-- Team Member 2 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Row 3-->
-                        <div class="alum-row" style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
-                                </div>
-                            </div>
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Row 4-->
-                        <div class="alum-row" style="display: flex; align-items: flex-start; justify-content: space-between; max-width:850px; padding: 20px 0 20px 0;">
-                            <!-- Team Member 1 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
-                                </div>
-                            </div>
-                            <!-- Team Member 2 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Team Member 3 -->
-                            <div class="col-md-3 team-member"style="font-size:20px; padding: 0 0 0 0;">
-                                <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
-                                    Riya Tandon <span style="font-weight:normal;">'24</span>
+
+                                <!-- Team Member 3 -->
+                                <div class="col-md-3 team-member" style="font-size:20px; padding: 0 0 0 0;">
+                                    <div class="team-member-name" style="font-weight:bold; padding-top:10px;">
+                                        Riya Tandon <span style="font-weight:normal;">'24</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
 </body>
 <!-- Footer -->
 <footer class="footer" style="color: white; background-color: black; padding: 50px 0 50px 0;">
@@ -435,14 +543,16 @@
             <!-- Left Content: Links and Text -->
             <div class="col-md-6 d-flex flex-column">
                 <!-- Footer Links -->
-                <ul class="list-inline footer-links" style="text-align: right; font-size: 1.5rem; margin-bottom: 0; padding: 0;">
+                <ul class="list-inline footer-links"
+                    style="text-align: right; font-size: 1.5rem; margin-bottom: 0; padding: 0;">
                     <li class="list-inline-item" style="margin-bottom: 0;">
                         <a href="mailto:inventioncorpsberkeley@email.com" style="color:white;" target="_blank">
                             <i class="fa-regular fa-envelope"></i>
                         </a>
                     </li>
                     <li class="list-inline-item" style="margin-bottom: 0;">
-                        <a href="https://www.linkedin.com/company/berkeley-invention-corps/" style="color:white;" target="_blank">
+                        <a href="https://www.linkedin.com/company/berkeley-invention-corps/" style="color:white;"
+                            target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </li>
@@ -460,11 +570,11 @@
                 <!-- Footer Text -->
                 <p style="font-weight:500; text-align: right; margin-bottom: 0;">&copy; Invention Corps 2025</p>
             </div>
-  
+
             <!-- Right Content: Image -->
             <div class="col-md-6 d-flex justify-content-start align-items-center">
                 <img src="Assets/img/Footer ICB.png" alt="Footer Image" style="max-width: 100%; height: auto;">
             </div>
         </div>
     </div>
-  </footer>
+</footer>
